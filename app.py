@@ -5,6 +5,12 @@ from datetime import datetime
 import prediction
 from data_frame_selector import DataFrameSelector
 
+st.set_page_config(
+    page_title="Hotel bookings",
+    page_icon=":hotel:",
+    initial_sidebar_state="expanded"
+)
+
 st.title('Hotel bookings')
 
 st.sidebar.title('Models')
@@ -17,11 +23,20 @@ model = st.sidebar.selectbox(
     ]
 )
 if model == 'Support Vector Machine':
-    st.sidebar.info('86.15% accuracy')
+    st.sidebar.info('Accuracy: 85.40%', icon='✅')
+    st.sidebar.info('F1 Score: 89.40%', icon='🎯')
+    st.sidebar.info('Precision: 87.32%', icon='👌')
+    st.sidebar.info('Recall: 91.59%', icon='🤝')
 elif model == 'Random Forest Classifier':
-    st.sidebar.info('90.41% accuracy')
+    st.sidebar.info('Accuracy: 90.17%', icon='✅')
+    st.sidebar.info('F1 Score: 92.84%', icon='🎯')
+    st.sidebar.info('Precision: 90.97%', icon='👌')
+    st.sidebar.info('Recall: 94.79%', icon='🤝')
 elif model == 'Extra Trees Classifier':
-    st.sidebar.info('89.43% accuracy')
+    st.sidebar.info('Accuracy: 90.39%', icon='✅')
+    st.sidebar.info('F1 Score: 92.94%', icon='🎯')
+    st.sidebar.info('Precision: 91.85%', icon='👌')
+    st.sidebar.info('Recall: 94.05%', icon='🤝')
 
 c1, c2, c3 = st.columns([1, 1, 1])
 type_of_meal = c1.selectbox(
