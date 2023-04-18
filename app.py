@@ -27,16 +27,19 @@ if model == 'Support Vector Machine':
     st.sidebar.info('F1 Score: 89.40%', icon='🎯')
     st.sidebar.info('Precision: 87.32%', icon='👌')
     st.sidebar.info('Recall: 91.59%', icon='🤝')
+    st.sidebar.info('AUC: 82.15%', icon='📈')
 elif model == 'Random Forest Classifier':
-    st.sidebar.info('Accuracy: 90.17%', icon='✅')
-    st.sidebar.info('F1 Score: 92.84%', icon='🎯')
-    st.sidebar.info('Precision: 90.97%', icon='👌')
-    st.sidebar.info('Recall: 94.79%', icon='🤝')
-elif model == 'Extra Trees Classifier':
     st.sidebar.info('Accuracy: 90.39%', icon='✅')
-    st.sidebar.info('F1 Score: 92.94%', icon='🎯')
-    st.sidebar.info('Precision: 91.85%', icon='👌')
-    st.sidebar.info('Recall: 94.05%', icon='🤝')
+    st.sidebar.info('F1 Score: 93.00%', icon='🎯')
+    st.sidebar.info('Precision: 91.21%', icon='👌')
+    st.sidebar.info('Recall: 94.85%', icon='🤝')
+    st.sidebar.info('AUC: 88.05%', icon='📈')
+elif model == 'Extra Trees Classifier':
+    st.sidebar.info('Accuracy: 90.24%', icon='✅')
+    st.sidebar.info('F1 Score: 92.83%', icon='🎯')
+    st.sidebar.info('Precision: 91.72%', icon='👌')
+    st.sidebar.info('Recall: 93.97%', icon='🤝')
+    st.sidebar.info('AUC: 88.28%', icon='📈')
 
 c1, c2, c3 = st.columns([1, 1, 1])
 type_of_meal = c1.selectbox(
