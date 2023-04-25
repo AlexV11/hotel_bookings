@@ -1,5 +1,9 @@
 <h1 align="center"> Hotel reservations </h1>
 
+## Miembros del equipo
+338900 - Marley Zaragoza Balderrama
+338931 - Andrés Alexis Villalba García
+
 ## Índice
 
 * [Descripción](#descripción)
